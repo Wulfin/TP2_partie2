@@ -10,23 +10,23 @@
         android:id="@+id/contact_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="4dp"
         android:text="Contact Id"
         android:textSize="11sp"
         app:layout_constraintEnd_toStartOf="@+id/details_con_btn"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/details_con_btn"
-        android:layout_width="0dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Details Contacts"
-        android:textSize="11sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/contact_id"
+        android:textSize="9sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/call_btn"
         app:layout_constraintEnd_toStartOf="@+id/call_btn"
         app:layout_constraintStart_toEndOf="@+id/contact_id" />
 
@@ -34,9 +34,11 @@
         android:id="@+id/call_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="29dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
         android:text="CALL"
-        app:layout_constraintBottom_toBottomOf="@+id/details_con_btn"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/details_con_btn" />
 
@@ -44,10 +46,10 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="43dp"
         android:text="Le resultat sera affiché aussi"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_id" />
 
